@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azulClaro"
+    tools:context=".QuizMenuActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="107sp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="35sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7sp"
+            android:layout_weight="1"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:text="MAIN MENU"
+            android:textColor="@color/negro"
+            android:textSize="40sp"
+            android:textStyle="italic|bold" />
+
+    </LinearLayout><![CDATA[
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120sp"
+        android:orientation="vertical">
+
+
+
+    ]]>
+
+    <Button
+        android:id="@+id/botonJugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36sp"
+        android:background="@color/azulElementoMenu"
+        android:onClick="seleccionarActividad"
+        android:text="Play Game"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/botonPuntuaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/azulElementoMenu"
+        android:onClick="seleccionarActividad"
+        android:text="View Scores"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonJugar" />
+
+    <Button
+        android:id="@+id/botonOpciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/azulElementoMenu"
+        android:onClick="seleccionarActividad"
+        android:text="Settings"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonPuntuaciones" />
+
+    <Button
+        android:id="@+id/botonAyuda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/azulElementoMenu"
+        android:onClick="seleccionarActividad"
+        android:text="Help"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonOpciones" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
